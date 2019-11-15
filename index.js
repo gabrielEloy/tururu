@@ -17,11 +17,14 @@ const tururu = function (){
     
     switch(platform){
         case 'linux':
-            return exec(linuxcmd);
+            exec(linuxcmd);
+            break;
         case 'win32':
-            return exec(windowscmd);
+            exec(windowscmd);
+            break;
         case 'darwin':
-            return exec(maccmd);
+            exec(maccmd);
+            break;
     }
     progressBar(38);
 
