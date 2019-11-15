@@ -1,16 +1,23 @@
 {
   "name": "tururu",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "naruto sadnessand sorrow funk remix in the terminal",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "music",
     "terminal",
     "naruto"
   ],
+  "bin": {
+    "tururu": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielEloy/tururu/issues"
+  },
+  "homepage": "https://github.com/gabrielEloy/tururu",
   "author": "Gabriel Eloy",
   "license": "MIT",
   "dependencies": {
