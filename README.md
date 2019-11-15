@@ -16,7 +16,7 @@ npx tururu
 ```
 ###### instalando o pacote globalmente
 ```
- npm install -g daledale
+ npm install -g tururu
 ```
 
 ##### Compatível com 
