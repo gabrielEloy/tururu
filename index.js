@@ -3,10 +3,13 @@ const progressBar = require('./progressBar');
 const path = require('path');
 const fs = require('fs');
 
-const mainPath = path.dirname(fs.realpathSync(__filename));
-const soundPath = path.join(mainPath, './tururu');
+const tururu = function (receivedSoundPath, receivedSoundTime){
+    
+    const mainPath = path.dirname(fs.realpathSync(__filename));
+    const soundPath = receivedSoundPath ? receivedSoundPath : path.join(mainPath, './tururu');
+    const soundTime = receivedSoundTime ? receivedSoundTime : 38
 
-const tururu = function (){
+
     const linuxcmd = 'paplay '+soundPath+'.ogg';
     const windowscmd = path.join(mainPath, './forWindows.vbs')+' '+soundPath+'.mp3';
     const maccmd = 'afplay '+soundPath+'.mp3';
@@ -26,7 +29,7 @@ const tururu = function (){
             exec(maccmd);
             break;
     }
-    progressBar(38);
+    progressBar(soundTime);
 
 
     function exec(cmd){
