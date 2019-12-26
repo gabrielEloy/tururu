@@ -1,5 +1,4 @@
 const exect = require('child_process').exec;
-const progressBar = require('./progressBar');
 const path = require('path');
 const fs = require('fs');
 
@@ -29,7 +28,6 @@ const tururu = function (receivedSoundPath, receivedSoundTime){
             exec(maccmd);
             break;
     }
-    progressBar(soundTime);
 
 
     function exec(cmd){
