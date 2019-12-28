@@ -1,7 +1,7 @@
 {
   "name": "tururu",
-  "version": "1.0.5",
-  "description": "naruto sadnessand sorrow funk remix in the terminal",
+  "version": "1.1.0",
+  "description": "naruto sadness and sorrow funk remix in the terminal",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -20,7 +20,5 @@
   "homepage": "https://github.com/gabrielEloy/tururu",
   "author": "Gabriel Eloy",
   "license": "MIT",
-  "dependencies": {
-    "progress": "^2.0.3"
-  }
+  "dependencies": {}
 }
